@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Büşra Köksal — Algorithm Developer · Computer Vision</title>
+  <meta name="description" content="Mathematics engineer and Google DeepMind Scholar. Patent-pending edge detection (MBB Filter), medical imaging, and computer vision."/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Mobile top bar -->
+  <header class="topbar">
+    <div class="topbar-mark"><span class="dot"></span>BK</div>
+    <div class="topbar-current" id="topbar-current">01 — Intro</div>
+    <button class="menu-btn" id="menu-open" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <line x1="4" y1="8" x2="20" y2="8"/>
+        <line x1="4" y1="16" x2="20" y2="16"/>
+      </svg>
+    </button>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="drawer">
+    <div class="drawer-head">
+      <div class="topbar-mark"><span class="dot"></span>BK</div>
+      <button class="menu-btn" id="menu-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <line x1="6" y1="6" x2="18" y2="18"/>
+          <line x1="18" y1="6" x2="6" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#intro"><span>Intro</span><span class="num">01</span></a>
+      <a href="#research"><span>Research</span><span class="num">02</span></a>
+      <a href="#publications"><span>Publications</span><span class="num">03</span></a>
+      <a href="#projects"><span>Projects</span><span class="num">04</span></a>
+      <a href="#education"><span>Education</span><span class="num">05</span></a>
+      <a href="#skills"><span>Skills</span><span class="num">06</span></a>
+      <a href="#experience"><span>Experience</span><span class="num">07</span></a>
+      <a href="#contact"><span>Contact</span><span class="num">08</span></a>
+    </nav>
+  </div>
+
+  <div class="shell">
+    <!-- Side rail (desktop) -->
+    <aside class="rail">
+      <div class="rail-mark"><span class="dot"></span>BK</div>
+      <nav class="rail-nav" id="rail-nav">
+        <a href="#intro" data-id="intro"><span>Intro</span></a>
+        <a href="#research" data-id="research"><span>Research</span></a>
+        <a href="#publications" data-id="publications"><span>Publications</span></a>
+        <a href="#projects" data-id="projects"><span>Projects</span></a>
+        <a href="#education" data-id="education"><span>Education</span></a>
+        <a href="#skills" data-id="skills"><span>Skills</span></a>
+        <a href="#experience" data-id="experience"><span>Experience</span></a>
+        <a href="#contact" data-id="contact"><span>Contact</span></a>
+      </nav>
+      <div class="rail-foot">
+        İstanbul / London<br>
+        Available 2026
+      </div>
+    </aside>
+
+    <main class="main">
+      <!-- 01 Hero -->
+      <section id="intro" class="hero-v5">
+        <header class="hero-v5-head">
+          <h1 class="hero-name-v4">Büşra Köksal</h1>
+          <p class="hero-meta-strip">
+            <span>Google DeepMind Scholar</span>
+            <span>Patent Pending</span>
+            <span>PCT</span>
+            <span>MSc Mathematics Engineering</span>
+            <span>ITU</span>
+          </p>
+        </header>
+
+        <div class="hero-v5-grid">
+          <div class="card hero-bio-card">
+            <div class="proj-tag">About</div>
+            <p class="hero-bio-v5">
+              I am a mathematics engineer and researcher specializing in image processing and computer vision. My work spans medical image analysis — including dental X-ray processing, tooth segmentation, and fMRI denoising — as well as deep learning–based image colorization and enhancement.
+            </p>
+            <p class="hero-bio-v5">
+              During my Master's at Istanbul Technical University, I developed a novel edge detection algorithm — the <em>MBB Edge Filter</em> — based on Schwarzian derivatives, currently in the international patent process (PCT). My research was supported by the Google DeepMind Scholarship, through which I was mentored by a DeepMind researcher and attended programs at Cambridge and Oxford.
+            </p>
+            <p class="hero-bio-v5 hero-bio-closer">
+              I am looking for opportunities where mathematical rigor and visual computing create real-world impact.
+            </p>
+          </div>
+
+          <div class="card dark hero-cta-card">
+            <div class="proj-tag">Get in touch</div>
+            <h3 class="hero-cta-heading">Open to research &amp; engineering roles, 2026.</h3>
+            <div class="hero-cta-row hero-cta-row--dark">
+              <a class="hero-cta" href="mailto:bkoksal503@gmail.com">
+                <span class="hero-cta-ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5.5" width="18" height="13" rx="1.5"/>
+                    <path d="M3.5 6.5l8.5 6.5 8.5-6.5"/>
+                  </svg>
+                </span>
+                <span>Email</span>
+              </a>
+              <a class="hero-cta" href="https://www.linkedin.com/in/busra-koksal/" target="_blank" rel="noreferrer">
+                <span class="hero-cta-ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="2"/>
+                    <line x1="7.5" y1="10" x2="7.5" y2="16.5"/>
+                    <circle cx="7.5" cy="7.25" r="0.4" fill="currentColor" stroke="none"/>
+                    <path d="M11 16.5V10m0 2.2c.6-1.4 1.9-2.4 3.4-2.4 1.9 0 3.1 1.3 3.1 3.4v3.3"/>
+                  </svg>
+                </span>
+                <span>LinkedIn</span>
+              </a>
+              <a class="hero-cta" href="https://github.com/bkksl" target="_blank" rel="noreferrer">
+                <span class="hero-cta-ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-3.5 1-4.3-1.5-5.3-2M15 21v-3.2a2.6 2.6 0 0 0-.7-2c2.5-.3 5.2-1.2 5.2-5.7a4.4 4.4 0 0 0-1.2-3.1 4 4 0 0 0-.1-3s-1-.3-3.3 1.2a11.4 11.4 0 0 0-6 0C6.6 1.7 5.6 2 5.6 2a4 4 0 0 0-.1 3 4.4 4.4 0 0 0-1.2 3.1c0 4.5 2.7 5.4 5.2 5.7a2.6 2.6 0 0 0-.7 2V21"/>
+                  </svg>
+                </span>
+                <span>GitHub</span>
+              </a>
+              <a class="hero-cta" href="https://orcid.org/0000-0002-7066-5687" target="_blank" rel="noreferrer">
+                <span class="hero-cta-ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"/>
+                    <line x1="8.5" y1="8.5" x2="8.5" y2="16"/>
+                    <circle cx="8.5" cy="6.5" r="0.45" fill="currentColor" stroke="none"/>
+                    <path d="M11.5 8.5h3a3.75 3.75 0 0 1 0 7.5h-3z"/>
+                  </svg>
+                </span>
+                <span>ORCID</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 Research -->
+      <section id="research" class="sec">
+        <div class="sec-label">02 — Research &amp; Patent</div>
+        <h2 class="sec-title">A novel <em>edge filter</em>, supported by Google DeepMind.</h2>
+
+        <div class="dm-grid">
+          <div class="card">
+            <div class="proj-tag">Google DeepMind Scholarship</div>
+            <h3>AI Scholar, 2022 — 2025</h3>
+            <p>First recipient from outside Computer Engineering in Turkey, selected among 3–4 annually. Mentored throughout by a Google DeepMind researcher; visited the London office in person.</p>
+            <ul class="tightlist">
+              <li>Cambridge Ellis Unit Summer School on Probabilistic Machine Learning (2024)</li>
+              <li>Oxford Machine Learning Summer School — MLx Health &amp; Bio track (2024)</li>
+              <li>Direct mentorship from a Google DeepMind researcher</li>
+            </ul>
+          </div>
+
+          <div class="card dark">
+            <div class="proj-tag" style="color: rgba(240,235,224,0.6)">Patent — PCT International</div>
+            <h3>MBB Edge Filter</h3>
+            <p style="color: rgba(240,235,224,0.78)">
+              "A Filtering Method Used for Object and Edge Detection in Images" — the first application of Schwarzian derivatives to edge detection in the literature.
+            </p>
+            <div class="card-meta"><span>Turkish Patent Office</span><span>2025/002384</span></div>
+            <div class="card-meta"><span>PCT International</span><span>PCT/TR2026/050009</span></div>
+            <div class="card-meta"><span>Filed</span><span>Jan 7, 2026</span></div>
+          </div>
+        </div>
+
+        <div class="mbb">
+          <div class="mbb-callout">// Method</div>
+          <p class="mbb-prose" style="margin-top: 8px">
+            During my Master's research, I developed the MBB Edge Filter — a novel edge detection method based on Schwarzian derivatives. This represents the first application of Schwarzian derivatives to edge detection in the literature, introduced after a 39-year gap since the concept's last significant exploration. Unlike classical methods (Sobel, Prewitt, Canny), the MBB Filter does not rely on fixed masks, offering a flexible alternative that is adaptable across multiple application domains — including <strong>autonomous systems, industrial inspection, and defense applications</strong> — and <strong>suitable for real-time, energy-efficient processing</strong>.
+          </p>
+        </div>
+
+        <!-- Compare widget -->
+        <div class="compare" id="compare" data-mode="tabs">
+          <div class="compare-tabs">
+            <button class="compare-tab" data-tab="Original">Original</button>
+            <button class="compare-tab" data-tab="Canny">Canny</button>
+            <button class="compare-tab" data-tab="Sobel">Sobel</button>
+            <button class="compare-tab active" data-tab="MBB">MBB</button>
+          </div>
+
+          <div class="compare-canvas">
+            <div class="compare-img hidden" data-img="Original" style="background: linear-gradient(135deg, #2a2a2a, #1a1a1a)">[ ORIGINAL — placeholder ]</div>
+            <div class="compare-img hidden" data-img="Canny" style="background: radial-gradient(circle at 30% 40%, #3a3a3a 0%, #0d0d0d 60%)">[ CANNY — placeholder ]</div>
+            <div class="compare-img hidden" data-img="Sobel" style="background: radial-gradient(circle at 70% 50%, #353535 0%, #0a0a0a 60%)">[ SOBEL — placeholder ]</div>
+            <div class="compare-img" data-img="MBB" style="background: radial-gradient(circle at 50% 50%, #4a4a4a 0%, #060606 70%)">[ MBB — placeholder ]</div>
+
+            <div class="compare-slider-wrap" id="compare-slider" hidden>
+              <div class="compare-img" id="compare-base" style="background: radial-gradient(circle at 30% 40%, #3a3a3a 0%, #0d0d0d 60%)">[ CANNY ]</div>
+              <div class="compare-slider-overlay" id="compare-overlay" style="clip-path: inset(0 0 0 50%)">
+                <div class="compare-img" style="background: radial-gradient(circle at 50% 50%, #4a4a4a 0%, #060606 70%)">[ MBB ]</div>
+              </div>
+              <div class="compare-handle" id="compare-handle" style="left: 50%"></div>
+            </div>
+          </div>
+
+          <div class="compare-toolbar">
+            <span>// Benchmark — placeholder image</span>
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <select id="compare-baseline" hidden>
+                <option value="Original">vs. Original</option>
+                <option value="Canny" selected>vs. Canny</option>
+                <option value="Sobel">vs. Sobel</option>
+              </select>
+              <button id="compare-mode">Compare ↔</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <div class="table-scroll">
+            <table class="metrics">
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>PSNR ↑</th>
+                  <th>SSIM ↑</th>
+                  <th>F1 ↑</th>
+                  <th>FoM ↑</th>
+                  <th>FPS ↑</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Canny</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>Sobel</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>Prewitt</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr class="highlight"><td>MBB (ours)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div style="margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap;">
+          <a class="btn ghost" href="#" target="_blank" rel="noreferrer">
+            Code: Threshold Optimization <span class="arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 03 Publications -->
+      <section id="publications" class="sec">
+        <div class="sec-label">03 — Publications</div>
+        <h2 class="sec-title">Peer-reviewed work on <em>Schwarzian</em> edge detection.</h2>
+
+        <div class="pub">
+          <div class="pub-num">01</div>
+          <div class="pub-body">
+            <p>Demirer, R. M., Köksal, B., Tunga, B. <em>A Novel Edge Detection Method Based on Schwarzian Derivatives: MBB Edge Filter.</em></p>
+            <p>Elsevier — International Measurement Confederation (IMEKO), 2025.</p>
+          </div>
+          <div class="pub-status review">Under Review</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-num">02</div>
+          <div class="pub-body">
+            <p>Köksal, B., Demirer, R. M., Tunga, B. <em>An Alternative Method for Edge Detection Using Schwarzian Derivatives.</em></p>
+            <p>Proceedings of ICOMAA-2025, Full-Text Proceedings Book, pp. 1–8, Istanbul. ISBN: 978-605-69387-8-8.</p>
+            <p style="margin-top: 12px">
+              <a class="link" href="#" target="_blank" rel="noreferrer">View Full Text (PDF) ↗</a>
+              ·
+              <a class="link" href="#" target="_blank" rel="noreferrer">View Source ↗</a>
+            </p>
+            <div class="pdf-wrap"><iframe src="about:blank" title="ICOMAA full text"></iframe></div>
+            <a class="btn ghost pdf-mobile-btn" href="#" target="_blank" style="margin-top: 12px">View PDF <span class="arrow">↗</span></a>
+          </div>
+          <div class="pub-status">Published</div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-num">03</div>
+          <div class="pub-body">
+            <p>Köksal, B., Demirer, R. M., Tunga, B. <em>An Alternative Method for Edge Detection Using Schwarzian Derivatives.</em></p>
+            <p>ICOMAA-2025, Abstract Book, p. 37. ISBN: 978-605-69387-7-1.</p>
+            <p style="margin-top: 12px">
+              <a class="link" href="#" target="_blank" rel="noreferrer">View Abstract (PDF) ↗</a>
+              ·
+              <a class="link" href="#" target="_blank" rel="noreferrer">View Source ↗</a>
+            </p>
+            <div class="pdf-wrap"><iframe src="about:blank" title="ICOMAA abstract"></iframe></div>
+            <a class="btn ghost pdf-mobile-btn" href="#" target="_blank" style="margin-top: 12px">View Abstract <span class="arrow">↗</span></a>
+          </div>
+          <div class="pub-status">Published</div>
+        </div>
+
+        <div style="margin-top: 40px">
+          <div class="sec-label" style="margin-top: 0">Patents</div>
+          <div class="pub">
+            <div class="pub-num">P1</div>
+            <div class="pub-body">
+              <p>Demirer, R. M., Köksal, B., Tunga, B. <em>A Filtering Method Used for Object and Edge Detection in Images.</em></p>
+              <p>Turkish Patent and Trademark Office — Application No: 2025/002384 (Filed Feb 26, 2025).</p>
+              <p>International PCT — Application No: PCT/TR2026/050009 (Filed Jan 7, 2026).</p>
+            </div>
+            <div class="pub-status">Pending</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 Projects -->
+      <section id="projects" class="sec">
+        <div class="sec-label">04 — Projects</div>
+        <h2 class="sec-title">From research <em>to production</em>.</h2>
+
+        <div class="proj-grid">
+          <div class="proj featured">
+            <div class="proj-tag">🦷 Current Focus · In progress</div>
+            <h3>Production-Ready Dental Segmentation Pipeline</h3>
+            <p>
+              Currently building a production-ready dental panoramic segmentation pipeline using PyTorch and U-Net++. This project extends my previous tooth segmentation work into an industry-grade architecture with modular code, Docker containerization, and an interactive demo for real-time inference.
+            </p>
+            <div class="pipeline">
+              <div class="pipe-step"><div class="pipe-num">01</div><div class="pipe-name">Data</div></div>
+              <div class="pipe-step"><div class="pipe-num">02</div><div class="pipe-name">Preprocess</div></div>
+              <div class="pipe-step"><div class="pipe-num">03</div><div class="pipe-name">U-Net++</div></div>
+              <div class="pipe-step"><div class="pipe-num">04</div><div class="pipe-name">Docker</div></div>
+              <div class="pipe-step"><div class="pipe-num">05</div><div class="pipe-name">Demo</div></div>
+            </div>
+            <div class="proj-links">
+              <a class="btn ghost" style="border-color: rgba(240,235,224,0.3); color: var(--bg);" href="#">
+                Architecture details <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="proj">
+            <div class="proj-tag">🦷 Medical Imaging · Computer Vision</div>
+            <h3>Tooth Segmentation with U-Net</h3>
+            <p>
+              Developed a U-Net-based pipeline for automatic tooth segmentation on 106 panoramic dental X-rays, including preprocessing (resizing/normalization), training, and inference.
+            </p>
+            <div class="proj-imgs">
+              <div class="proj-img-placeholder">Original Panoramic X-Ray</div>
+              <div class="proj-img-placeholder">U-Net Segmentation Output</div>
+            </div>
+            <div class="metrics-row">
+              <div class="metric"><div class="metric-label">Dice</div><div class="metric-value">0.9027</div></div>
+              <div class="metric"><div class="metric-label">IoU</div><div class="metric-value">0.8227</div></div>
+              <div class="metric"><div class="metric-label">Specificity</div><div class="metric-value">0.9787</div></div>
+              <div class="metric"><div class="metric-label">Sensitivity</div><div class="metric-value">0.8788</div></div>
+            </div>
+            <p style="font-size: 13px; color: var(--ink-muted);">
+              Data: Panoramic Dental X-Rays With Segmented Mandibles (Abdi, Kasaei &amp; Mehdizadeh, 2015) — Mendeley.
+            </p>
+          </div>
+
+          <div class="proj">
+            <div class="proj-tag">🦷 Medical Imaging · MATLAB · BSc Thesis</div>
+            <h3>Dental X-Ray Angle Calculation</h3>
+            <p>
+              Built a MATLAB algorithm to calculate the effective angle for tooth extraction using X-ray images personally collected from a dental hospital. Based on the computed angle, the algorithm outputs whether the tooth extraction procedure would be effective or not.
+            </p>
+            <div class="proj-img-placeholder">Go-Me (Mandibular plane) output</div>
+            <div class="metrics-row">
+              <div class="metric"><div class="metric-label">Accuracy</div><div class="metric-value">85%</div></div>
+            </div>
+          </div>
+
+          <div class="proj">
+            <div class="proj-tag">🧠 Medical Imaging · Signal Processing</div>
+            <h3>fMRI Time Series Denoising</h3>
+            <p>
+              Denoised fMRI time series using the nonlinear HDMR method as an alternative to the standard GLM approach. Implemented in Python, achieving high structural similarity with ground-truth data.
+            </p>
+            <div class="proj-img-placeholder">SSIM comparison: HDMR vs Gaussian</div>
+            <div class="metrics-row">
+              <div class="metric"><div class="metric-label">SSIM (HDMR)</div><div class="metric-value">0.9892</div></div>
+              <div class="metric"><div class="metric-label">SSIM (Gaussian)</div><div class="metric-value">0.7288</div></div>
+            </div>
+            <p style="font-size: 13px; color: var(--ink-muted);">
+              Data: OpenNeuro ds004349 (Frank &amp; Zeithamova, 2022).
+            </p>
+          </div>
+
+          <div class="proj">
+            <div class="proj-tag">🎨 Deep Learning · Computer Vision</div>
+            <h3>Deep Learning Image Colorization</h3>
+            <p>
+              Colorized grayscale images using CNN, Autoencoder, and VGG16 with transfer learning, leveraging a custom dataset created from movie scenes. The lowest loss was achieved using an Autoencoder with the ADAM optimizer, demonstrating strong performance comparable to standard baseline models.
+            </p>
+            <div class="proj-imgs">
+              <div class="proj-img-placeholder">Input · Grayscale</div>
+              <div class="proj-img-placeholder">Output · Colorized</div>
+            </div>
+            <div class="metrics-row">
+              <div class="metric"><div class="metric-label">Lowest MSE</div><div class="metric-value">0.0025</div></div>
+              <div class="metric"><div class="metric-label">Best Model</div><div class="metric-value" style="font-size: 16px;">Autoencoder</div></div>
+              <div class="metric"><div class="metric-label">Optimizer</div><div class="metric-value" style="font-size: 16px;">ADAM</div></div>
+            </div>
+          </div>
+
+          <div class="proj">
+            <div class="proj-tag">📊 Data Analysis · Comparative ML</div>
+            <h3>Data Analysis &amp; ML Projects</h3>
+            <p>
+              European Recycling Movement data analysis project in R (cleaning, visualization, reporting). Comparative ML project evaluating MLP, SVM, CNN, and regression models across multiple datasets using Python, PyTorch, TensorFlow, and Pandas.
+            </p>
+            <div class="proj-links">
+              <a class="btn ghost" href="https://github.com/MAT-381E-Project-Team" target="_blank" rel="noreferrer">
+                R Recycling Project <span class="arrow">↗</span>
+              </a>
+              <a class="btn ghost" href="https://github.com/FIZ-437E-Project-Team" target="_blank" rel="noreferrer">
+                Comparative ML <span class="arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 Education -->
+      <section id="education" class="sec">
+        <div class="sec-label">05 — Education &amp; Summer Schools</div>
+        <h2 class="sec-title">Trained at <em>ITU</em>, Cambridge &amp; Oxford.</h2>
+
+        <div class="entry">
+          <div class="entry-when">2022 — 2025</div>
+          <div class="entry-body">
+            <h4>MSc, Mathematics Engineering</h4>
+            <div class="where">Istanbul Technical University · GPA 3.13/4</div>
+            <p><em>Thesis:</em> Novel Edge Detection Methods Based on Schwarzian Derivatives and the Development of the MBB Edge Filter.</p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-when">July 2024</div>
+          <div class="entry-body">
+            <h4>Oxford Machine Learning Summer School — OxML 2024</h4>
+            <div class="where">University of Oxford · Mathematical Institute</div>
+            <p>MLx Health &amp; Bio track. Completed certificate.</p>
+            <p class="small">[Placeholder — certificate &amp; summer school imagery]</p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-when">July 2024</div>
+          <div class="entry-body">
+            <h4>Cambridge Ellis Unit Summer School on Probabilistic Machine Learning</h4>
+            <div class="where">University of Cambridge · Department of Engineering</div>
+            <p>Completed certificate.</p>
+            <p class="small">[Placeholder — certificate &amp; summer school imagery]</p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-when">2018 — 2022</div>
+          <div class="entry-body">
+            <h4>BSc, Mathematics Engineering</h4>
+            <div class="where">Istanbul Technical University · GPA 3.02/4</div>
+            <p><em>Thesis:</em> Angle Calculation in Dental X-Rays Using Image Processing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 Skills -->
+      <section id="skills" class="sec">
+        <div class="sec-label">06 — Technical Skills</div>
+        <h2 class="sec-title">The <em>stack</em>.</h2>
+
+        <div class="skills-grid">
+          <div class="skill-block">
+            <div class="skill-label">Languages</div>
+            <div class="skill-list"><span>Python</span><span>MATLAB</span><span>R</span><span>SQL</span><span>C</span></div>
+          </div>
+          <div class="skill-block">
+            <div class="skill-label">ML / DL Frameworks</div>
+            <div class="skill-list"><span>PyTorch</span><span>TensorFlow</span><span>Jax</span><span>Flax</span><span>OpenCV</span><span>Pandas</span></div>
+          </div>
+          <div class="skill-block">
+            <div class="skill-label">Tools</div>
+            <div class="skill-list"><span>Git / GitHub</span><span>Jupyter</span><span>Power BI</span></div>
+          </div>
+          <div class="skill-block">
+            <div class="skill-label">Platforms</div>
+            <div class="skill-list"><span>MATLAB R2023b</span><span>Google Colab</span></div>
+          </div>
+          <div class="skill-block" style="grid-column: 1 / -1">
+            <div class="skill-label">Coursework</div>
+            <div class="skill-list"><span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span><span>Image Processing</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 Experience -->
+      <section id="experience" class="sec">
+        <div class="sec-label">07 — Work &amp; Research Experience</div>
+        <h2 class="sec-title">Independent <em>research</em>, industry roots.</h2>
+
+        <div class="entry">
+          <div class="entry-when">2022 — 2025</div>
+          <div class="entry-body">
+            <h4>Computer Vision Researcher &amp; Algorithm Developer</h4>
+            <div class="where">Istanbul Technical University — Independent Research</div>
+            <p>
+              Conducted independent research in image processing and edge detection under the Google DeepMind Scholarship. Designed and developed the MBB Edge Filter based on Schwarzian derivatives, managing the full research lifecycle: literature review, mathematical modeling, algorithm design, MATLAB implementation, experimental validation across benchmark datasets, and end-to-end testing.
+            </p>
+            <p>
+              Led the patent application process (Turkish Patent Office + PCT international filing) and authored a journal article, currently under review as a revised manuscript at Elsevier's <em>Measurement</em>. Presented findings at ICOMAA-2025.
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-when">Feb — May 2022</div>
+          <div class="entry-body">
+            <h4>Software Engineer Intern</h4>
+            <div class="where">Enqura &amp; EnSight Information Technologies</div>
+            <p>Generated, duplicated, manipulated, and reported datasets on MSSQL. Created dashboards on Power BI.</p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-when">Apr — Nov 2021</div>
+          <div class="entry-body">
+            <h4>Student Assistant</h4>
+            <div class="where">Istanbul Technical University — Department of Information Technology</div>
+            <p>Developed web pages for program installation guides using PHP, JavaScript, HTML, CSS, and Bootstrap. Provided network, system, and software support across all ITU campuses.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 48px">
+          <div class="sec-label">References</div>
+          <div class="ref-grid">
+            <div class="ref">
+              <h4>Assoc. Prof. Dr. Burcu Tunga</h4>
+              <div class="where">Istanbul Technical University<br>Mathematics Engineering</div>
+              <div class="small">[LinkedIn] · Contact available upon request</div>
+            </div>
+            <div class="ref">
+              <h4>Asst. Prof. Dr. R. Murat Demirer</h4>
+              <div class="where">Işık University<br>Electrical and Electronics Engineering</div>
+              <div class="small">[LinkedIn] · Contact available upon request</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 Contact -->
+      <section id="contact" class="sec">
+        <div class="sec-label">08 — İletişim</div>
+        <h2 class="sec-title">Get in <em>touch</em>.</h2>
+
+        <div class="contact-list">
+          <a class="contact-item" href="mailto:bkoksal503@gmail.com">
+            <span class="label">Email</span>
+            <span class="value">bkoksal503@gmail.com</span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/busra-koksal/" target="_blank" rel="noreferrer">
+            <span class="label">LinkedIn</span>
+            <span class="value">linkedin.com/in/busra-koksal</span>
+          </a>
+          <a class="contact-item" href="https://github.com/bkksl" target="_blank" rel="noreferrer">
+            <span class="label">GitHub</span>
+            <span class="value">github.com/bkksl</span>
+          </a>
+          <a class="contact-item" href="https://orcid.org/0000-0002-7066-5687" target="_blank" rel="noreferrer">
+            <span class="label">ORCID</span>
+            <span class="value">0000-0002-7066-5687</span>
+          </a>
+        </div>
+
+        <footer class="foot">
+          <span>© 2026 Büşra Köksal</span>
+          <span>Built with care · v1</span>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Mobile drawer
+    const drawer = document.getElementById('drawer');
+    document.getElementById('menu-open').addEventListener('click', () => drawer.classList.add('open'));
+    document.getElementById('menu-close').addEventListener('click', () => drawer.classList.remove('open'));
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => drawer.classList.remove('open')));
+
+    // Scroll-spy for rail + topbar current
+    const SECTIONS = [
+      { id: 'intro', num: '01', label: 'Intro' },
+      { id: 'research', num: '02', label: 'Research' },
+      { id: 'publications', num: '03', label: 'Publications' },
+      { id: 'projects', num: '04', label: 'Projects' },
+      { id: 'education', num: '05', label: 'Education' },
+      { id: 'skills', num: '06', label: 'Skills' },
+      { id: 'experience', num: '07', label: 'Experience' },
+      { id: 'contact', num: '08', label: 'Contact' }
+    ];
+    const railLinks = document.querySelectorAll('#rail-nav a');
+    const topbarCurrent = document.getElementById('topbar-current');
+
+    function setActive(id) {
+      railLinks.forEach(a => a.classList.toggle('active', a.dataset.id === id));
+      const s = SECTIONS.find(x => x.id === id);
+      if (s) topbarCurrent.textContent = `${s.num} — ${s.label}`;
+    }
+    setActive('intro');
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) setActive(e.target.id);
+      });
+    }, { rootMargin: '-30% 0px -55% 0px', threshold: 0 });
+    SECTIONS.forEach(s => {
+      const el = document.getElementById(s.id);
+      if (el) obs.observe(el);
+    });
+
+    // Compare widget
+    const compare = document.getElementById('compare');
+    const tabsBtns = compare.querySelectorAll('.compare-tab');
+    const imgs = compare.querySelectorAll('.compare-img[data-img]');
+    const slider = document.getElementById('compare-slider');
+    const sliderBase = document.getElementById('compare-base');
+    const sliderOverlay = document.getElementById('compare-overlay');
+    const sliderHandle = document.getElementById('compare-handle');
+    const baselineSel = document.getElementById('compare-baseline');
+    const modeBtn = document.getElementById('compare-mode');
+    const tabsContainer = compare.querySelector('.compare-tabs');
+
+    const BG = {
+      Original: 'linear-gradient(135deg, #2a2a2a, #1a1a1a)',
+      Canny: 'radial-gradient(circle at 30% 40%, #3a3a3a 0%, #0d0d0d 60%)',
+      Sobel: 'radial-gradient(circle at 70% 50%, #353535 0%, #0a0a0a 60%)',
+      MBB: 'radial-gradient(circle at 50% 50%, #4a4a4a 0%, #060606 70%)'
+    };
+
+    tabsBtns.forEach(btn => btn.addEventListener('click', () => {
+      const tab = btn.dataset.tab;
+      tabsBtns.forEach(b => b.classList.toggle('active', b === btn));
+      imgs.forEach(i => i.classList.toggle('hidden', i.dataset.img !== tab));
+    }));
+
+    function setMode(mode) {
+      compare.dataset.mode = mode;
+      const isSlider = mode === 'slider';
+      tabsContainer.hidden = isSlider;
+      imgs.forEach(i => i.style.display = isSlider ? 'none' : '');
+      slider.hidden = !isSlider;
+      baselineSel.hidden = !isSlider;
+      modeBtn.textContent = isSlider ? '← Tabs' : 'Compare ↔';
+      modeBtn.classList.toggle('active', isSlider);
+    }
+    modeBtn.addEventListener('click', () => setMode(compare.dataset.mode === 'slider' ? 'tabs' : 'slider'));
+
+    baselineSel.addEventListener('change', () => {
+      const v = baselineSel.value;
+      sliderBase.style.background = BG[v] || BG.Canny;
+      sliderBase.textContent = `[ ${v.toUpperCase()} ]`;
+    });
+
+    function setSliderPos(p) {
+      const pct = Math.max(0, Math.min(100, p));
+      sliderOverlay.style.clipPath = `inset(0 0 0 ${pct}%)`;
+      sliderHandle.style.left = `${pct}%`;
+    }
+    slider.addEventListener('pointerdown', (e) => {
+      const move = (ev) => {
+        const r = slider.getBoundingClientRect();
+        const x = (ev.clientX ?? (ev.touches && ev.touches[0]?.clientX)) - r.left;
+        setSliderPos(x / r.width * 100);
+      };
+      move(e);
+      const up = () => {
+        window.removeEventListener('pointermove', move);
+        window.removeEventListener('pointerup', up);
+      };
+      window.addEventListener('pointermove', move);
+      window.addEventListener('pointerup', up);
+    });
+
+    // Metrics table fade indicator
+    const tableScroll = document.querySelector('.table-scroll');
+    function checkFade() {
+      const fade = tableScroll.scrollWidth > tableScroll.clientWidth + 4 &&
+                   tableScroll.scrollLeft + tableScroll.clientWidth < tableScroll.scrollWidth - 4;
+      tableScroll.dataset.fade = fade ? '1' : '0';
+    }
+    checkFade();
+    tableScroll.addEventListener('scroll', checkFade);
+    window.addEventListener('resize', checkFade);
+
+    // Reveal-on-scroll
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('in');
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  </script>
+</body>
+</html>
