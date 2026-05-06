@@ -361,6 +361,7 @@ section.sec:last-of-type { border-bottom: none; }
 .hero-cta-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 .hero-cta-row--dark { margin-top: auto; }
