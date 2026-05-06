@@ -910,12 +910,23 @@ table.metrics tbody tr.highlight td:first-child::before {
       rgba(240,235,224,0.04) 12px, rgba(240,235,224,0.04) 13px);
 }
 
+.proj-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--bg-card-2);
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
 .proj-imgs {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
   margin-bottom: 18px;
 }
+.proj-imgs .proj-img { margin-bottom: 0; }
 @media (max-width: 600px) {
   .proj-imgs { grid-template-columns: 1fr; }
 }
