@@ -45,7 +45,8 @@
       <a href="#education"><span>Education</span><span class="num">05</span></a>
       <a href="#skills"><span>Skills</span><span class="num">06</span></a>
       <a href="#experience"><span>Experience</span><span class="num">07</span></a>
-      <a href="#contact"><span>Contact</span><span class="num">08</span></a>
+      <a href="#references"><span>References</span><span class="num">08</span></a>
+      <a href="#contact"><span>Contact</span><span class="num">09</span></a>
     </nav>
   </div>
 
@@ -61,6 +62,7 @@
         <a href="#education" data-id="education"><span>Education</span></a>
         <a href="#skills" data-id="skills"><span>Skills</span></a>
         <a href="#experience" data-id="experience"><span>Experience</span></a>
+        <a href="#references" data-id="references"><span>References</span></a>
         <a href="#contact" data-id="contact"><span>Contact</span></a>
       </nav>
     </aside>
@@ -544,26 +546,29 @@
           </div>
         </div>
 
-        <div style="margin-top: 48px">
-          <div class="sec-label">References</div>
-          <div class="ref-grid">
-            <div class="ref">
-              <h4>Assoc. Prof. Dr. Burcu Tunga</h4>
-              <div class="where">Istanbul Technical University<br>Mathematics Engineering</div>
-              <div class="small">[LinkedIn] · Contact available upon request</div>
-            </div>
-            <div class="ref">
-              <h4>Asst. Prof. Dr. R. Murat Demirer</h4>
-              <div class="where">Işık University<br>Electrical and Electronics Engineering</div>
-              <div class="small">[LinkedIn] · Contact available upon request</div>
-            </div>
+      </section>
+
+      <!-- 08 References -->
+      <section id="references" class="sec">
+        <div class="sec-label">08 — References</div>
+        <h2 class="sec-title">Academic <em>references</em>.</h2>
+        <div class="ref-grid">
+          <div class="ref">
+            <h4>Assoc. Prof. Dr. Burcu Tunga</h4>
+            <div class="where">Istanbul Technical University<br>Mathematics Engineering</div>
+            <div class="small">Contact available upon request</div>
+          </div>
+          <div class="ref">
+            <h4>Asst. Prof. Dr. R. Murat Demirer</h4>
+            <div class="where">Işık University<br>Electrical and Electronics Engineering</div>
+            <div class="small">Contact available upon request</div>
           </div>
         </div>
       </section>
 
-      <!-- 08 Contact -->
+      <!-- 09 Contact -->
       <section id="contact" class="sec">
-        <div class="sec-label">08 — İletişim</div>
+        <div class="sec-label">09 — Contact</div>
         <h2 class="sec-title">Get in <em>touch</em>.</h2>
 
         <div class="contact-list">
@@ -585,13 +590,13 @@
           </a>
         </div>
 
-        <footer class="foot">
-          <span>© 2026 Büşra Köksal</span>
-          <span>Built with care · v1</span>
-        </footer>
       </section>
     </main>
   </div>
+
+  <footer class="foot">
+    <span>© 2026 Büşra Köksal</span>
+  </footer>
 
   <script>
     // Mobile drawer
@@ -609,7 +614,8 @@
       { id: 'education', num: '05', label: 'Education' },
       { id: 'skills', num: '06', label: 'Skills' },
       { id: 'experience', num: '07', label: 'Experience' },
-      { id: 'contact', num: '08', label: 'Contact' }
+      { id: 'references', num: '08', label: 'References' },
+      { id: 'contact', num: '09', label: 'Contact' }
     ];
     const railLinks = document.querySelectorAll('#rail-nav a');
     const topbarCurrent = document.getElementById('topbar-current');

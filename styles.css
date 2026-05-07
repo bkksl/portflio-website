@@ -1265,6 +1265,20 @@ footer.foot {
   gap: 16px;
 }
 
+footer.site-foot {
+  width: 100%;
+  padding: 24px var(--gutter);
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ── References ───────────────────────────────────────────── */
 .ref-grid {
   display: grid;
