@@ -870,7 +870,21 @@ table.metrics tbody tr.highlight td:first-child::before {
   gap: 16px;
   padding: 6px 0;
 }
-.pub-app-text { margin: 0 !important; }
+.pub-app-text {
+  margin: 0 !important;
+  position: relative;
+  padding-left: 16px;
+}
+.pub-app-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ink-muted);
+}
 .pub-badge {
   display: inline-flex;
   align-items: center;
