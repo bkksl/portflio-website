@@ -805,16 +805,21 @@ table.metrics thead th {
   background: var(--bg-card-2);
 }
 table.metrics tbody tr:last-child td { border-bottom: none; }
-table.metrics tbody tr.highlight td { font-weight: 600; color: var(--ink); }
-table.metrics tbody tr.highlight td:first-child { position: relative; }
+table.metrics tbody tr.highlight td {
+  color: var(--ink);
+}
+table.metrics tbody tr.highlight td:first-child {
+  position: relative;
+  font-weight: 600;
+}
 table.metrics tbody tr.highlight td:first-child::before {
   content: "";
   position: absolute;
   left: 0;
   top: 14px;
   bottom: 14px;
-  width: 2px;
-  background: var(--ink);
+  width: 4px;
+  background: #8B6F47;
 }
 
 /* ── Publications ──────────────────────────────────────────── */
