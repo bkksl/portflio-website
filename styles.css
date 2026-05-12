@@ -661,6 +661,10 @@ section.sec:last-of-type { border-bottom: none; }
   color: rgba(255,255,255,0.55);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  background-color: #0a0a0a;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .compare-img.hidden { opacity: 0; pointer-events: none; }
 

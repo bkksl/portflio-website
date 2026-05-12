@@ -199,19 +199,19 @@
             <button class="compare-tab" data-tab="Original">Original</button>
             <button class="compare-tab" data-tab="Canny">Canny</button>
             <button class="compare-tab" data-tab="Sobel">Sobel</button>
-            <button class="compare-tab active" data-tab="MBB">MBB</button>
+            <button class="compare-tab active" data-tab="MBB">MBB (thr 0.0005)</button>
           </div>
 
           <div class="compare-canvas">
-            <div class="compare-img hidden" data-img="Original" style="background: linear-gradient(135deg, #2a2a2a, #1a1a1a)">[ ORIGINAL — placeholder ]</div>
-            <div class="compare-img hidden" data-img="Canny" style="background: radial-gradient(circle at 30% 40%, #3a3a3a 0%, #0d0d0d 60%)">[ CANNY — placeholder ]</div>
-            <div class="compare-img hidden" data-img="Sobel" style="background: radial-gradient(circle at 70% 50%, #353535 0%, #0a0a0a 60%)">[ SOBEL — placeholder ]</div>
-            <div class="compare-img" data-img="MBB" style="background: radial-gradient(circle at 50% 50%, #4a4a4a 0%, #060606 70%)">[ MBB — placeholder ]</div>
+            <div class="compare-img hidden" data-img="Original" style="background-image: url('portfolyo_images/Car.jpg')"></div>
+            <div class="compare-img hidden" data-img="Canny" style="background-image: url('portfolyo_images/Car_Canny.png')"></div>
+            <div class="compare-img hidden" data-img="Sobel" style="background-image: url('portfolyo_images/Car_Sobel.png')"></div>
+            <div class="compare-img" data-img="MBB" style="background-image: url('portfolyo_images/Car_MBB_0005.png')"></div>
 
             <div class="compare-slider-wrap" id="compare-slider" hidden>
-              <div class="compare-img" id="compare-base" style="background: radial-gradient(circle at 30% 40%, #3a3a3a 0%, #0d0d0d 60%)">[ CANNY ]</div>
+              <div class="compare-img" id="compare-base" style="background-image: url('portfolyo_images/Car_Canny.png')"></div>
               <div class="compare-slider-overlay" id="compare-overlay" style="clip-path: inset(0 0 0 50%)">
-                <div class="compare-img" style="background: radial-gradient(circle at 50% 50%, #4a4a4a 0%, #060606 70%)">[ MBB ]</div>
+                <div class="compare-img" style="background-image: url('portfolyo_images/Car_MBB_0005.png')"></div>
               </div>
               <div class="compare-handle" id="compare-handle" style="left: 50%"></div>
             </div>
@@ -660,10 +660,10 @@
     const tabsContainer = compare.querySelector('.compare-tabs');
 
     const BG = {
-      Original: 'linear-gradient(135deg, #2a2a2a, #1a1a1a)',
-      Canny: 'radial-gradient(circle at 30% 40%, #3a3a3a 0%, #0d0d0d 60%)',
-      Sobel: 'radial-gradient(circle at 70% 50%, #353535 0%, #0a0a0a 60%)',
-      MBB: 'radial-gradient(circle at 50% 50%, #4a4a4a 0%, #060606 70%)'
+      Original: "url('portfolyo_images/Car.jpg')",
+      Canny: "url('portfolyo_images/Car_Canny.png')",
+      Sobel: "url('portfolyo_images/Car_Sobel.png')",
+      MBB: "url('portfolyo_images/Car_MBB_0005.png')"
     };
 
     tabsBtns.forEach(btn => btn.addEventListener('click', () => {
@@ -686,8 +686,7 @@
 
     baselineSel.addEventListener('change', () => {
       const v = baselineSel.value;
-      sliderBase.style.background = BG[v] || BG.Canny;
-      sliderBase.textContent = `[ ${v.toUpperCase()} ]`;
+      sliderBase.style.backgroundImage = BG[v] || BG.Canny;
     });
 
     function setSliderPos(p) {
