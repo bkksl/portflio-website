@@ -340,8 +340,14 @@
               Developed a U-Net-based pipeline for automatic tooth segmentation on 106 panoramic dental X-rays, including preprocessing (resizing/normalization), training, and inference.
             </p>
             <div class="proj-imgs">
-              <img class="proj-img" src="portfolyo_images/Tooth_seg_input.png" alt="Original panoramic dental X-ray"/>
-              <img class="proj-img" src="portfolyo_images/Tooth_seg_output.png" alt="U-Net tooth segmentation output"/>
+              <figure class="proj-fig">
+                <img class="proj-img" src="portfolyo_images/Tooth_seg_input.png" alt="Original panoramic dental X-ray"/>
+                <figcaption class="proj-cap">Original Panoramic X-Ray (Input)</figcaption>
+              </figure>
+              <figure class="proj-fig">
+                <img class="proj-img" src="portfolyo_images/Tooth_seg_output.png" alt="U-Net tooth segmentation output"/>
+                <figcaption class="proj-cap">U-Net Segmentation Output</figcaption>
+              </figure>
             </div>
             <div class="metrics-row">
               <div class="metric"><div class="metric-label">Dice</div><div class="metric-value">0.9027</div></div>
@@ -350,7 +356,7 @@
               <div class="metric"><div class="metric-label">Sensitivity</div><div class="metric-value">0.8788</div></div>
             </div>
             <p style="font-size: 13px; color: var(--ink-muted);">
-              Data: Panoramic Dental X-Rays With Segmented Mandibles (Abdi, Kasaei &amp; Mehdizadeh, 2015) — Mendeley.
+              Data: Panoramic Dental X-Rays With Segmented Mandibles (Abdi, Kasaei &amp; Mehdizadeh, 2015) — <a href="https://data.mendeley.com/datasets/hxt48yk462/1" target="_blank" rel="noreferrer">Mendeley</a>.
             </p>
           </div>
 
@@ -360,9 +366,12 @@
             <p>
               Built a MATLAB algorithm to calculate the effective angle for tooth extraction using X-ray images personally collected from a dental hospital. Based on the computed angle, the algorithm outputs whether the tooth extraction procedure would be effective or not.
             </p>
-            <div class="proj-img-frame">
-              <img class="proj-img-inner" src="portfolyo_images/lisans_Tez.png" alt="Go-Me mandibular plane angle output"/>
-            </div>
+            <figure class="proj-fig proj-fig--center">
+              <div class="proj-img-frame">
+                <img class="proj-img-inner" src="portfolyo_images/lisans_Tez.png" alt="Go-Me mandibular plane angle output"/>
+              </div>
+              <figcaption class="proj-cap">Go-Me (Mandibular plane) output</figcaption>
+            </figure>
             <div class="metrics-row">
               <div class="metric"><div class="metric-label">Accuracy</div><div class="metric-value">85%</div></div>
             </div>
@@ -391,8 +400,14 @@
               Colorized grayscale images using CNN, Autoencoder, and VGG16 with transfer learning, leveraging a custom dataset created from movie scenes. The lowest loss was achieved using an Autoencoder with the ADAM optimizer, demonstrating strong performance comparable to standard baseline models.
             </p>
             <div class="proj-imgs">
-              <img class="proj-img" src="portfolyo_images/DL_colorization_input.jpg" alt="Grayscale input image"/>
-              <img class="proj-img" src="portfolyo_images/DL_colorization_output.png" alt="Colorized output image"/>
+              <figure class="proj-fig">
+                <img class="proj-img" src="portfolyo_images/DL_colorization_input.jpg" alt="Grayscale input image"/>
+                <figcaption class="proj-cap">Input</figcaption>
+              </figure>
+              <figure class="proj-fig">
+                <img class="proj-img" src="portfolyo_images/DL_colorization_output.png" alt="Colorized output image"/>
+                <figcaption class="proj-cap">Output</figcaption>
+              </figure>
             </div>
             <div class="metrics-row">
               <div class="metric"><div class="metric-label">Lowest MSE</div><div class="metric-value">0.0025</div></div>
