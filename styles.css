@@ -672,6 +672,7 @@ section.sec:last-of-type { border-bottom: none; }
   position: absolute;
   inset: 0;
   cursor: ew-resize;
+  touch-action: none;
 }
 .compare-slider-overlay {
   position: absolute;
@@ -1406,7 +1407,7 @@ footer.site-foot {
 }
 .pdf-mobile-btn { display: none; }
 @media (max-width: 700px) {
-  .pdf-wrap { display: none; }
+  .pdf-wrap iframe { height: 420px; }
   .pdf-mobile-btn { display: inline-flex; }
 }
 

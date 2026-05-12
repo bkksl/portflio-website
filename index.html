@@ -287,7 +287,6 @@
               <a class="link" href="https://2025.icomaas.com/wp-content/uploads/2025/11/Proceedings-of-International-Conference-on-Mathematical-Advances-and-Applications.pdf" target="_blank" rel="noreferrer">View Source ↗</a>
             </p>
             <div class="pdf-wrap"><iframe src="bildiri_fulltext_pdf.pdf#view=FitH" title="ICOMAA full text"></iframe></div>
-            <a class="btn ghost pdf-mobile-btn" href="bildiri_fulltext_pdf.pdf" target="_blank" style="margin-top: 12px">View PDF <span class="arrow">↗</span></a>
           </div>
           <div class="pub-status">Published</div>
         </div>
@@ -303,7 +302,6 @@
               <a class="link" href="https://2025.icomaas.com/wp-content/uploads/2025/06/2025-Icomaa-AbstractBook.pdf" target="_blank" rel="noreferrer">View Source ↗</a>
             </p>
             <div class="pdf-wrap"><iframe src="bildiri_abstract_pdf.pdf#view=FitH" title="ICOMAA abstract"></iframe></div>
-            <a class="btn ghost pdf-mobile-btn" href="bildiri_abstract_pdf.pdf" target="_blank" style="margin-top: 12px">View Abstract <span class="arrow">↗</span></a>
           </div>
           <div class="pub-status">Published</div>
         </div>
@@ -693,6 +691,8 @@
       sliderHandle.style.left = `${pct}%`;
     }
     slider.addEventListener('pointerdown', (e) => {
+      e.preventDefault();
+      try { slider.setPointerCapture(e.pointerId); } catch (_) {}
       const move = (ev) => {
         const r = slider.getBoundingClientRect();
         const x = (ev.clientX ?? (ev.touches && ev.touches[0]?.clientX)) - r.left;
@@ -700,11 +700,13 @@
       };
       move(e);
       const up = () => {
-        window.removeEventListener('pointermove', move);
-        window.removeEventListener('pointerup', up);
+        slider.removeEventListener('pointermove', move);
+        slider.removeEventListener('pointerup', up);
+        slider.removeEventListener('pointercancel', up);
       };
-      window.addEventListener('pointermove', move);
-      window.addEventListener('pointerup', up);
+      slider.addEventListener('pointermove', move);
+      slider.addEventListener('pointerup', up);
+      slider.addEventListener('pointercancel', up);
     });
 
     // Metrics table fade indicator
