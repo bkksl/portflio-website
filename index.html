@@ -194,7 +194,7 @@
         </div>
 
         <!-- Compare widget -->
-        <div class="compare" id="compare" data-mode="tabs">
+        <div class="compare" id="compare" data-mode="slider">
           <div class="compare-tabs">
             <button class="compare-tab" data-tab="Original">Original</button>
             <button class="compare-tab" data-tab="Canny">Canny</button>
@@ -218,7 +218,7 @@
           </div>
 
           <div class="compare-toolbar">
-            <span>// Benchmark — placeholder image</span>
+            <span></span>
             <div style="display: flex; gap: 8px; align-items: center;">
               <select id="compare-baseline" hidden>
                 <option value="Original">vs. Original</option>
@@ -678,6 +678,7 @@
       modeBtn.classList.toggle('active', isSlider);
     }
     modeBtn.addEventListener('click', () => setMode(compare.dataset.mode === 'slider' ? 'tabs' : 'slider'));
+    setMode(compare.dataset.mode || 'tabs');
 
     baselineSel.addEventListener('change', () => {
       const v = baselineSel.value;
