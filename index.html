@@ -236,18 +236,21 @@
               <thead>
                 <tr>
                   <th>Method</th>
-                  <th>PSNR ↑</th>
-                  <th>SSIM ↑</th>
                   <th>F1 ↑</th>
                   <th>FoM ↑</th>
-                  <th>FPS ↑</th>
+                  <th>Recall ↑</th>
+                  <th>Precision ↑</th>
+                  <th>PSNR ↑</th>
+                  <th>SSIM ↑</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td>Canny</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-                <tr><td>Sobel</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-                <tr><td>Prewitt</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-                <tr class="highlight"><td>MBB (ours)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr class="highlight"><td>MBB (T &gt; 0.0005)</td><td>0.134262</td><td><strong>0.391681</strong></td><td>0.157283</td><td>0.117120</td><td>9.012291</td><td>0.469656</td></tr>
+                <tr class="highlight"><td>MBB (T &gt; 0.001)</td><td>0.123931</td><td>0.388349</td><td>0.119087</td><td>0.129186</td><td>9.821211</td><td>0.528137</td></tr>
+                <tr><td>Canny</td><td>0.154529</td><td>0.332046</td><td><strong>0.222373</strong></td><td>0.118404</td><td>8.221711</td><td>0.312268</td></tr>
+                <tr><td>Prewitt</td><td>0.142728</td><td>0.265196</td><td>0.107053</td><td>0.214062</td><td>10.991336</td><td>0.616361</td></tr>
+                <tr><td>Sobel</td><td>0.141893</td><td>0.266553</td><td>0.106739</td><td>0.211574</td><td>10.974405</td><td>0.612490</td></tr>
+                <tr><td>Roberts</td><td><strong>0.166979</strong></td><td>0.262318</td><td>0.121285</td><td><strong>0.267915</strong></td><td><strong>11.255420</strong></td><td><strong>0.624019</strong></td></tr>
               </tbody>
             </table>
           </div>
